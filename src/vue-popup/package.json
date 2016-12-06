@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "vue-popup@^0.2.9",
+        "scope": null,
+        "escapedName": "vue-popup",
+        "name": "vue-popup",
+        "rawSpec": "^0.2.9",
+        "spec": ">=0.2.9 <0.3.0",
+        "type": "range"
+      },
+      "D:\\Web\\WRD-UI\\node_modules\\element-theme-default"
+    ]
+  ],
+  "_from": "vue-popup@>=0.2.9 <0.3.0",
+  "_id": "vue-popup@0.2.12",
+  "_inCache": true,
+  "_location": "/vue-popup",
+  "_nodeVersion": "6.6.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/vue-popup-0.2.12.tgz_1479188958385_0.4884867600630969"
+  },
+  "_npmUser": {
+    "name": "yi.yang",
+    "email": "leopoldthecuber@gmail.com"
+  },
+  "_npmVersion": "3.10.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "vue-popup@^0.2.9",
+    "scope": null,
+    "escapedName": "vue-popup",
+    "name": "vue-popup",
+    "rawSpec": "^0.2.9",
+    "spec": ">=0.2.9 <0.3.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/element-theme-default"
+  ],
+  "_resolved": "https://registry.npmjs.org/vue-popup/-/vue-popup-0.2.12.tgz",
+  "_shasum": "61a504883cf4ad69ce83e8a16f0a53f0d58bf738",
+  "_shrinkwrap": null,
+  "_spec": "vue-popup@^0.2.9",
+  "_where": "D:\\Web\\WRD-UI\\node_modules\\element-theme-default",
+  "author": {
+    "name": "baiyaaaaa"
+  },
+  "dependencies": {
+    "wind-dom": "0.0.3"
+  },
+  "description": "A popup mixin for vue.js",
+  "devDependencies": {
+    "cooking-vue2": "^0.2.3",
+    "gh-pages": "^0.11.0",
+    "my-local-ip": "^1.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "61a504883cf4ad69ce83e8a16f0a53f0d58bf738",
+    "tarball": "https://registry.npmjs.org/vue-popup/-/vue-popup-0.2.12.tgz"
+  },
+  "gitHead": "2bf2ae8f67b51dcf05eafdf36aee1091b577c335",
+  "homepage": "http://git@github.com:ElemeFE/vue-popup.git/vue-popup#readme",
+  "keywords": [],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "long.zhang",
+      "email": "long.zhang@me.com"
+    }
+  ],
+  "name": "vue-popup",
+  "optionalDependencies": {},
+  "private": false,
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:ElemeFE/vue-popup.git/vue-popup.git"
+  },
+  "scripts": {
+    "deploy": "cooking build --no-color",
+    "dev": "cooking watch",
+    "dist": "cooking build -p",
+    "page": "cooking build -c cooking.example.conf.js -p && gh-pages -d example/dist --remote origin",
+    "prepublish": "cooking build --no-color"
+  },
+  "version": "0.2.12"
+}
