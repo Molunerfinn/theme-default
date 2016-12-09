@@ -11,10 +11,23 @@
                 0px 0px 6px 0px rgba(0, 0, 0, .04);
 
     @e header {
-      padding: calc(var(--card-padding) - 2) var(--card-padding);
-      border-bottom: 1px solid var(--card-border-color);
+      padding: calc(var(--card-padding) - 8) var(--card-padding);
+      border-bottom: 1px solid transparent;
       box-sizing: border-box;
-    }
+      span.title{
+        position: relative;
+        line-height: 36px;
+        &:before{
+          content: '';
+          position: absolute;
+          height: 100%;
+          width: 4px;
+          background: var(--color-primary);
+          left: -var(--card-padding);
+          top: 0;
+        }
+      }
+   }
 
     @e body {
       padding: var(--card-padding);

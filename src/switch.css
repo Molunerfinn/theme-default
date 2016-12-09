@@ -69,12 +69,13 @@
       transition: border-color .3s, background-color .3s;
 
       & .el-switch__button {
-        position: absolute 0 * * 0;
-        border-radius: var(--border-radius-circle);
+        position: absolute -3px * * -3px;
+        border-radius: 0;
         transition: transform .3s;
         size: var(--switch-button-size);
         z-index: 20;
         background-color: var(--color-white);
+        box-shadow: 0 0 3px .5px rgba(0,0,0,0.27);
       }
     }
 
@@ -102,12 +103,12 @@
       .el-switch__label {
         &.el-switch__label--left {
           span {
-            left: 10px;
+            left: 5px;
           }
         }
         &.el-switch__label--right {
           span {
-            right: 10px;
+            right: 5px;
           }
         }
       }

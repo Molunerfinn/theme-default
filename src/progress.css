@@ -80,7 +80,7 @@
 
     @e outer {
       height: 6px;
-      border-radius: 100px;
+      border-radius: 0;
       background-color: #e5e9f2;
       overflow: hidden;
       position: relative;
@@ -91,10 +91,10 @@
       left: 0;
       top: 0;
       height: 100%;
-      border-radius: 2px 0 0 2px;
+      border-radius: 0;
       background-color: var(--color-primary);
       text-align: right;
-      border-radius: 100px;
+      border-radius: 0;
       line-height: 1;
 
       @utils-vertical-center;
