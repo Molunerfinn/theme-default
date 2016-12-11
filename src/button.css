@@ -70,11 +70,9 @@
       &,
       &:hover,
       &:focus {
-        color: var(--button-disabled-color);
+        opacity: 0.7;
         cursor: not-allowed;
         background-image: none;
-        background-color: var(--button-disabled-fill);
-        border-color: var(--button-disabled-border);
       }
 
       &.el-button--text {
