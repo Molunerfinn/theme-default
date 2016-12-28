@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import "./common/var.css";
+
+body,
+.font-color{
+  color: var(--font-color-base);
+}
+
+.font-black{
+  background-color: var(--font-color-base)
+}
+
+.pale-blue{
+  background-color: var(--color-blue-lighter);
+}
+
+.light-blue{
+  background-color: var(--color-blue-light);
+}
+
+.blue,
+.normal{
+  background-color: var(--color-primary);
+}
+
+.dark-blue{
+  background-color: var(--color-blue);
+}
+
+.pale-green{
+  background-color: var(--color-green-pale);
+}
+
+.light-green{
+  background-color: var(--color-green-light);
+}
+
+.green,
+.success{
+  background-color: var(--color-success);
+}
+
+.dark-green{
+  background-color: var(--color-green-dark);
+}
+
+.pale-cyan{
+  background-color: var(--color-cyan-pale);
+}
+
+.light-cyan{
+  background-color: var(--color-cyan-light);
+}
+
+.cyan{
+  background-color: var(--color-cyan);
+}
+
+.pale-red{
+  background-color: var(--color-red-pale);
+}
+
+.light-red{
+  background-color: var(--color-red-light);
+}
+
+.red,
+.danger{
+  background-color: var(--color-danger);
+}
+
+.dark-red{
+  background-color: var(--color-red-dark);
+}
+
+.ruby,
+.important{
+  background-color: var(--color-ruby);
+}
+
+.dark-black{
+  background-color: var(--color-black);
+}
+
+.black{
+  background-color: var(--color-black-dark);
+}
+
+.light-black{
+  background-color: var(--color-black-light)
+}
+
+.notice-font-color{
+  color: var(--color-notice-font);
+}
+
+.pale-grey{
+  background-color: var(--color-grey-pale);
+}
+
+.light-grey{
+  background-color: var(--color-grey-light);
+}
+
+.grey{
+  background-color: var(--color-grey-base);
+}
+
+.dark-white{
+  background-color: var(--color-white-dark);
+}
+
+.white{
+  background-color: var(--color-white);
+}
