@@ -5,7 +5,7 @@
 @component-namespace el {
   @b pagination {
     white-space: nowrap;
-    padding: 2px 5px;
+    padding: 10px 0;
     color: var(--pagination-color);
     @utils-clearfix;
 
@@ -25,7 +25,7 @@
       input {
         padding-right: 25px;
         border-radius: var(--border-radius-small);
-        height: 28px;
+        height: 35px;
       }
     }
 
@@ -97,7 +97,7 @@
     }
 
     @e sizes {
-      margin: 0 10px 0 0;
+      margin: 0 15px 0 0;
 
       .el-input .el-input__inner {
         font-size: 13px;
@@ -110,11 +110,11 @@
     }
 
     @e jump {
-      margin-left: 10px;
+      margin-left: 15px;
     }
 
     @e total {
-      margin: 0 10px;
+      margin: 0 15px;
     }
 
     @e rightwrapper {
@@ -125,10 +125,11 @@
       border: 1px solid var(--pagination-border-color);
       border-radius: var(--pagination-border-radius);
       line-height: 18px;
+      height: 35px;
       padding: 4px 2px;
-      width: 30px;
+      width: 35px !important;
       text-align: center;
-      margin: 0 6px;
+      margin: 0 10px;
       box-sizing: border-box;
       transition: border .3s;
 
@@ -174,7 +175,7 @@
 
       &.btn-quicknext,
       &.btn-quickprev {
-        line-height: 28px;
+        line-height: 35px;
         color: var(--pagination-button-color);
       }
 

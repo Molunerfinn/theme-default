@@ -2,8 +2,8 @@
 @import "./common/var.css";
 
 @define-extend menu-item {
-  height: 56px;
-  line-height: 56px;
+  height: 50px;
+  line-height: 50px;
   font-size: 14px;
   color: var(--menu-item-color);
   padding: 0 20px;
@@ -33,15 +33,22 @@
 
       & .el-menu-item,
       & .el-submenu__title {
-        color: #c0ccda;
-
         &:hover {
           background-color: #475669;
+          color: #fff;
         }
+      }
+
+      & .el-menu-item {
+        color: #acacac;
+      }
+
+      & .el-submenu__title {
+        color: #d9d9d9;
       }
       
       & .el-submenu .el-menu {
-        background-color: #1f2f3d;
+        background-color: #2e2e2e;
 
         & .el-menu-item:hover {
           background-color: #475669;
@@ -127,7 +134,7 @@
             }
           }
           .el-menu-item.is-active {
-            color: var(--color-primary);
+            color: var(--color-white);
           }
         }
       }
@@ -150,7 +157,7 @@
       background-color: #d3dce6;
     }
     @when active {
-      color: var(--color-primary);
+      color: var(--color-white);
     }
   }
   
@@ -167,12 +174,46 @@
       background-color: #e5e9f2;
     }
     & .el-menu-item {
-      height: 50px;
-      line-height: 50px;
-      padding: 0 45px;
+      height: 35px;
+      line-height: 35px;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 50px !important;
+      position: relative;
 
       &:hover {
         background-color: #d3dce6;
+        &:before {
+          content: '';
+          height: 25px;
+          width: 4px;
+          background: #1b9ef3;
+          position: absolute;
+          top: 5px;
+          left: 0;
+        }
+      }
+      &.is-active {
+        &:before {
+          content: '';
+          height: 25px;
+          width: 4px;
+          background: #1b9ef3;
+          position: absolute;
+          top: 5px;
+          left: 0;
+        }
+        &:after {
+          content: '';
+          width: 0;
+          height: 0;
+          border-width: 5px;
+          border-style: solid;
+          border-color: rgba(255, 255, 255, 0) rgb(255, 255, 255) transparent transparent;
+          position: absolute;
+          top: 12.5px;
+          right: 0;
+        }
       }
     }
     @e icon-arrow {

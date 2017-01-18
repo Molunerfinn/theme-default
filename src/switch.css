@@ -6,7 +6,7 @@
   @b switch {
     display: inline-block;
     position: relative;
-    font-size: var(--switch-font-size);
+    font-size: var(--switch-font-size) !important;
     line-height: var(--switch-height);
     height: var(--switch-height);
     vertical-align: middle;
@@ -25,7 +25,7 @@
       left: 0;
       top: 0;
       display: inline-block;
-      font-size: var(--switch-font-size);
+      font-size: var(--switch-font-size) !important;
       cursor: pointer;
       user-select: none;
       @m left {
@@ -42,7 +42,7 @@
         line-height: 1;
         top: 4px;
         position: absolute;
-        font-size: var(--switch-font-size);
+        font-size: var(--switch-font-size) !important;
         display: inline-block;
         color: var(--color-white);
       }
@@ -70,13 +70,14 @@
       transition: border-color .3s, background-color .3s;
 
       & .el-switch__button {
-        position: absolute -3px * * -3px;
+        position: absolute -3px * * -5px;
         border-radius: 0;
         transition: transform .3s;
-        size: var(--switch-button-size);
+        width: 26px;
+        height: 22px;
         z-index: 20;
         background-color: var(--color-white);
-        box-shadow: 0 0 3px .5px rgba(0,0,0,0.27);
+        box-shadow: 0 0 3px 1px rgba(0,0,0,0.27);
       }
     }
 
@@ -105,11 +106,13 @@
         &.el-switch__label--left {
           span {
             left: 5px;
+            top: 5px;
           }
         }
         &.el-switch__label--right {
           span {
             right: 5px;
+            top: 5px;
           }
         }
       }

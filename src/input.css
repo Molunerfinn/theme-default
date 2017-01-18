@@ -21,7 +21,7 @@
       height: var(--input-height);
       line-height: 1;
       outline: none;
-      padding: 3px 10px;
+      padding: 2.5px 10px;
       transition: var(--border-transition-base);
       width: 100%;
 

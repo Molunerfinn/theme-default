@@ -5,14 +5,31 @@
   @b popover {
     position: absolute;
     background: var(--popover-fill);
-    min-width: 150px;
+    width: 200px;
     border-radius: 2px;
     border: 1px solid var(--popover-border-color);
-    padding: var(--popover-padding);
+    padding: 20px 20px 10px 15px;
     z-index: var(--index-popper);
     font-size: var(--popover-font-size);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .12),
                 0px 0px 6px 0px rgba(0, 0, 0, .04);
+    .pop-content{
+      margin-bottom: 5px;
+    }
+    .handle-area{
+      text-align: right;
+      margin: 0;
+      .el-button--mini{
+        min-width: auto;
+      }
+    }
+    .pop-close{
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      color: var(--color-danger);
+      cursor: pointer;
+    }
 
     .popper__arrow,
     .popper__arrow::after {

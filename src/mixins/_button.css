@@ -26,9 +26,14 @@
   &.is-plain {
     background: var(--button-default-fill);
     border: var(--border-base);
-    color: var(--button-default-color);
+    color: $background-color;
+    box-shadow: 0 0 4px 0.3px rgba(0,0,0,0.17);
+    border: 1px solid transparent;
 
-    &:hover,
+    &:hover {
+      color: tint($background-color, var(--button-hover-tint-percent));
+      border-color: tint($border-color, var(--button-hover-tint-percent));
+    }
     &:focus {
       background: #fff;
       border-color: $border-color;

@@ -11,10 +11,30 @@
 
     .el-button-group {
       display: block;
+      .el-button--primary {
+        min-width: 91px;
+      }
+      .el-button--success {
+        min-width: 90px;
+        color: var(--color-success);
+        background-color: var(--color-white);
+        border: 1px solid transparent;
+        box-shadow: 0 0 4px .3px rgba(0,0,0,0.17);
+        i.el-dropdown__icon.el-icon-caret-bottom
+          color: #2E2E2E;
+
+      }
+      .el-button.el-button--success:not(:last-child){
+        margin-right: 0;
+      }
+      .el-button:hover {
+        z-index: 0;
+      }
     }
 
     & .el-dropdown__caret-button {
       padding: * 5px;
+      min-width: 35px !important;
 
       & .el-dropdown__icon {
         padding-left: 0;
@@ -26,16 +46,16 @@
     }
   }
   @b dropdown-menu {
-    margin: 5px 0;
+    margin-top: 0.5px;
     background-color: #fff;
-    border: 1px solid #D3DCE6;
-    box-shadow: var(--dropdown-menu-box-shadow);
+    border: 1px solid #eff2f7;
     padding: 6px 0;
     z-index: 10;
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100px;
+    min-width: 125px;
+    box-shadow: 0 2px 4px 0.5px rgba(0,0,0,0.17);
 
     @e item {
       list-style: none;

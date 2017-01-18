@@ -15,7 +15,22 @@
     text-align: center;
     box-sizing: border-box;
     outline: none;
+    min-width: 75px;
     margin: 0;
+    &.el-button--default {
+      box-shadow: 0 0 4px 0.3px rgba(0,0,0,0.17);
+      color: var(--color-primary);
+      border: 1px solid transparent;
+      &:hover {
+        color: var(--color-blue-light);
+        border: 1px solid var(--color-blue-light);
+      }
+      &:focus {
+        color: var(--color-blue);
+        border: 1px solid var(--color-blue);
+      }
+    }
+
     @utils-user-select none;
     & + .el-button {
       margin-left: 10px;
@@ -70,7 +85,7 @@
       &,
       &:hover,
       &:focus {
-        opacity: 0.7;
+        opacity: 0.6;
         cursor: not-allowed;
         background-image: none;
       }
@@ -129,6 +144,20 @@
     }
     @m mini {
       @mixin button-size var(--button-mini-padding-vertical), var(--button-mini-padding-horizontal), var(--button-mini-font-size), var(--button-border-radius);
+      min-width: 55px;
+    }
+    @m wider {
+      font-size: 14px;
+      padding: 11px auto;
+      width: 105px;
+    }
+    @m ex-wider {
+      font-size: 14px;
+      padding: 11px auto;
+      width: 135px;
+    }
+    @m common {
+      min-width: auto;
     }
     @m text {
       border: none;

@@ -110,9 +110,10 @@
     }
 
     @e button {
-      size: var(--slider-button-size);
+      height: 18px;
+      width: 2px;
       background-color: var(--slider-main-background-color);
-      border-radius: 50%;
+      border-radius: 0;
       transition: .2s;
       user-select: none;
 

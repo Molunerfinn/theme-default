@@ -32,7 +32,7 @@
     }
     @e item {
       padding: 0 16px;
-      height: 42px;
+      height: 50px;
       box-sizing: border-box;
       line-height: @height;
       float: left;
