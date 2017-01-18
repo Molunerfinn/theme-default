@@ -8,7 +8,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background: #fff;
+    background: var(--color-white);
     border-radius: var(--border-radius-small);
     box-shadow: var(--dialog-box-shadow);
     box-sizing: border-box;
@@ -61,7 +61,7 @@
       line-height: 1;
       font-size: var(--dialog-title-font-size);
       font-weight: bold;
-      color: #1f2d3d;
+      color: var(--color-base-black);
     }
 
     @e body {
